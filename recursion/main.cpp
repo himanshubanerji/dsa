@@ -4,12 +4,12 @@
 using namespace std;
 
 void swap(vector<int> &v, int f, int l) {
-    // v[f] = v[f] ^ v[l];
-    // v[l] = v[f] ^ v[l];
-    // v[f] = v[f] ^ v[l];
-    int temp = v[f];
-    v[f] = v[l];
-    v[l] = temp;
+    v[f] = v[f] ^ v[l];
+    v[l] = v[f] ^ v[l];
+    v[f] = v[f] ^ v[l];
+    // int temp = v[f];
+    // v[f] = v[l];
+    // v[l] = temp;
 }
 
 void reverse_array(vector<int> &v,int i) {
